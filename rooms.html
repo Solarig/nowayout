@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Δωμάτια - No Way Out Escape Room</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Educational Disclaimer -->
+    <div class="disclaimer">
+        <p>
+            🎓 Η No Way Out είναι μια εικονική επιχείρηση που δημιουργήθηκε για τις εκπαιδευτικές ανάγκες του μαθήματος 'Διαχείριση Ηλεκτρονικής Φήμης' του μεταπτυχιακού 'Δημόσιος Λόγος και Ψηφιακά Μέσα'
+        </p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html">No Way Out</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Αρχική</a></li>
+                <li><a href="rooms.html" class="nav-link active">Δωμάτια</a></li>
+                <li><a href="contact.html" class="nav-link">Επικοινωνία</a></li>
+                <li><a href="booking.html" class="nav-link booking-btn">Κλείστε Θέση</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Τα Δωμάτιά Μας</h1>
+            <p>Επιλέξτε την περιπέτεια που σας ταιριάζει</p>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms rooms-page">
+        <div class="container">
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="images/rooms/egyptian-room.jpg" alt="Μυστήριο Αιγύπτου" loading="lazy">
+                        <div class="difficulty">Δυσκολία: ★★★★☆</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Μυστήριο Αιγύπτου</h3>
+                        <p>Εισβάλετε στον τάφο του Φαραώ και βρείτε τον χαμένο θησαυρό πριν η κατάρα σας καταλάβει! Λύστε αρχαία αινίγματα, αποκρυπτογραφήστε ιερογλυφικά και ανακαλύψτε τα μυστικά της αιγυπτιακής μυθολογίας.</p>
+                        <div class="room-details">
+                            <span><i class="fas fa-users"></i> 3-6 άτομα</span>
+                            <span><i class="fas fa-clock"></i> 60 λεπτά</span>
+                            <span><i class="fas fa-puzzle-piece"></i> Γρίφοι & Αινίγματα</span>
+                        </div>
+                        <div class="room-features">
+                            <h4>Χαρακτηριστικά:</h4>
+                            <ul>
+                                <li>Αυθεντικά αιγυπτιακά σκηνικά</li>
+                                <li>Προχωρημένα ηλεκτρονικά συστήματα</li>
+                                <li>Ειδικά εφέ ήχου και φωτισμού</li>
+                                <li>Κρυφές θήκες και μυστικές διόδους</li>
+                            </ul>
+                        </div>
+                        <div class="room-price">€25/άτομο</div>
+                        <a href="booking.html?room=egypt" class="book-now-btn">Κλείστε Τώρα</a>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="images/rooms/zombie-room.jpg" alt="Zombie Apocalypse" loading="lazy">
+                        <div class="difficulty">Δυσκολία: ★★★★★</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Zombie Apocalypse</h3>
+                        <p>Η αποκάλυψη των ζόμπι έχει αρχίσει! Βρείτε το αντίδοτο και ξεφύγετε από το εργαστήριο πριν μολυνθείτε! Το πιο τρομακτικό και δύσκολο δωμάτιό μας με πραγματικούς ηθοποιούς που παίζουν ζόμπι.</p>
+                        <div class="room-details">
+                            <span><i class="fas fa-users"></i> 4-6 άτομα</span>
+                            <span><i class="fas fa-clock"></i> 60 λεπτά</span>
+                            <span><i class="fas fa-skull"></i> Τρόμος & Δράση</span>
+                        </div>
+                        <div class="room-features">
+                            <h4>Χαρακτηριστικά:</h4>
+                            <ul>
+                                <li>Ζωντανοί ηθοποιοί (ζόμπι)</li>
+                                <li>Εργαστηριακό περιβάλλον</li>
+                                <li>Ειδικά εφέ μακιγιάζ</li>
+                                <li>Χημικά πειράματα</li>
+                            </ul>
+                        </div>
+                        <div class="room-price">€30/άτομο</div>
+                        <a href="booking.html?room=zombie" class="book-now-btn">Κλείστε Τώρα</a>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="images/rooms/prison-room.jpg" alt="Φυλακή Alcatraz" loading="lazy">
+                        <div class="difficulty">Δυσκολία: ★★★☆☆</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Φυλακή Alcatraz</h3>
+                        <p>Είστε κρατούμενοι στην πιο φρουρημένη φυλακή του κόσμου. Μπορείτε να σχεδιάσετε την τέλεια απόδραση; Συνεργαστείτε με τους συγκρατούμενούς σας και βρείτε τον τρόπο να ξεφύγετε!</p>
+                        <div class="room-details">
+                            <span><i class="fas fa-users"></i> 2-5 άτομα</span>
+                            <span><i class="fas fa-clock"></i> 60 λεπτά</span>
+                            <span><i class="fas fa-key"></i> Στρατηγική</span>
+                        </div>
+                        <div class="room-features">
+                            <h4>Χαρακτηριστικά:</h4>
+                            <ul>
+                                <li>Αυθεντικά κελιά φυλακής</li>
+                                <li>Κάγκελα και αλυσίδες</li>
+                                <li>Μηχανισμοί κλειδαριών</li>
+                                <li>Στολές κρατουμένων</li>
+                            </ul>
+                        </div>
+                        <div class="room-price">€22/άτομο</div>
+                        <a href="booking.html?room=alcatraz" class="book-now-btn">Κλείστε Τώρα</a>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="images/rooms/space-room.jpg" alt="Διαστημική Αποστολή" loading="lazy">
+                        <div class="difficulty">Δυσκολία: ★★★★☆</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Διαστημική Αποστολή</h3>
+                        <p>Ο διαστημικός σταθμός έχει υποστεί βλάβη! Επισκευάστε τα συστήματα και επιστρέψτε με ασφάλεια στη Γη! Χρησιμοποιήστε προχωρημένη τεχνολογία και λύστε τεχνικά προβλήματα στο διάστημα.</p>
+                        <div class="room-details">
+                            <span><i class="fas fa-users"></i> 3-6 άτομα</span>
+                            <span><i class="fas fa-clock"></i> 60 λεπτά</span>
+                            <span><i class="fas fa-rocket"></i> Sci-Fi & Τεχνολογία</span>
+                        </div>
+                        <div class="room-features">
+                            <h4>Χαρακτηριστικά:</h4>
+                            <ul>
+                                <li>Φουτουριστικό περιβάλλον</li>
+                                <li>Ηλεκτρονικά panels ελέγχου</li>
+                                <li>LED φωτισμός</li>
+                                <li>Διαστημικές στολές</li>
+                            </ul>
+                        </div>
+                        <div class="room-price">€28/άτομο</div>
+                        <a href="booking.html?room=space" class="book-now-btn">Κλείστε Τώρα</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="rooms-cta">
+                <h2>Έτοιμοι για την περιπέτεια;</h2>
+                <p>Κλείστε τώρα την θέση σας και ζήστε μια αξέχαστη εμπειρία!</p>
+                <a href="booking.html" class="cta-button">Κλείστε Θέση Τώρα</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>No Way Out</h3>
+                    <p>Η απόλυτη εμπειρία escape room</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Γρήγοροι Σύνδεσμοι</h4>
+                    <ul>
+                        <li><a href="index.html">Αρχική</a></li>
+                        <li><a href="rooms.html">Δωμάτια</a></li>
+                        <li><a href="contact.html">Επικοινωνία</a></li>
+                        <li><a href="booking.html">Κράτηση</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Επικοινωνία</h4>
+                    <p>📍 25ης Μαρτίου 69, Πτολεμαΐδα</p>
+                    <p>📞 6988772489</p>
+                    <p>✉️ info@nowayout.gr</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 No Way Out</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Κράτηση - No Way Out Escape Room</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Educational Disclaimer -->
+    <div class="disclaimer">
+        <p>
+            🎓 Η No Way Out είναι μια εικονική επιχείρηση που δημιουργήθηκε για τις εκπαιδευτικές ανάγκες του μαθήματος 'Διαχείριση Ηλεκτρονικής Φήμης' του μεταπτυχιακού 'Δημόσιος Λόγος και Ψηφιακά Μέσα'
+        </p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html">No Way Out</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Αρχική</a></li>
+                <li><a href="rooms.html" class="nav-link">Δωμάτια</a></li>
+                <li><a href="contact.html" class="nav-link">Επικοινωνία</a></li>
+                <li><a href="booking.html" class="nav-link booking-btn active">Κλείστε Θέση</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Κλείστε την Θέση σας</h1>
+            <p>Ζήστε μια αξέχαστη εμπειρία escape room</p>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking booking-page">
+        <div class="container">
+            <div class="booking-content">
+                <div class="booking-info">
+                    <h3>Έτοιμοι για την περιπέτεια;</h3>
+                    <p>Κλείστε τώρα την θέση σας και ζήστε μια αξέχαστη εμπειρία!</p>
+                    
+                    <div class="booking-benefits">
+                        <div class="benefit">
+                            <i class="fas fa-gift"></i>
+                            <span>Δωρεάν φωτογραφίες μνήμης</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-birthday-cake"></i>
+                            <span>Ειδικές τιμές για γενέθλια</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-users"></i>
+                            <span>Εκπτώσεις για ομάδες άνω των 10 ατόμων</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Ασφαλής και καθαρός χώρος</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-headset"></i>
+                            <span>24/7 υποστήριξη πελατών</span>
+                        </div>
+                    </div>
+
+                    <!-- Pricing Table -->
+                    <div class="pricing-table">
+                        <h4>Τιμοκατάλογος</h4>
+                        <div class="price-item">
+                            <span class="room-name">Μυστήριο Αιγύπτου</span>
+                            <span class="price">€25/άτομο</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="room-name">Zombie Apocalypse</span>
+                            <span class="price">€30/άτομο</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="room-name">Φυλακή Alcatraz</span>
+                            <span class="price">€22/άτομο</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="room-name">Διαστημική Αποστολή</span>
+                            <span class="price">€28/άτομο</span>
+                        </div>
+                    </div>
+
+                    <!-- Special Offers -->
+                    <div class="special-offers">
+                        <h4>Ειδικές Προσφορές</h4>
+                        <div class="offer">
+                            <i class="fas fa-percentage"></i>
+                            <div>
+                                <strong>Ομαδική Έκπτωση</strong>
+                                <p>10% έκπτωση για ομάδες άνω των 10 ατόμων</p>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <strong>Καθημερινή Προσφορά</strong>
+                                <p>20% έκπτωση Δευτέρα-Τετάρτη πριν τις 17:00</p>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <i class="fas fa-birthday-cake"></i>
+                            <div>
+                                <strong>Birthday Special</strong>
+                                <p>Δωρεάν κέικ και διακόσμηση για γενέθλια</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="booking-form" id="bookingForm">
+                    <h3>Φόρμα Κράτησης</h3>
+                    
+                    <div class="form-group">
+                        <label for="name">Όνομα *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Τηλέφωνο *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Ημερομηνία *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="time">Ώρα *</label>
+                            <select id="time" name="time" required>
+                                <option value="">Επιλέξτε ώρα</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="22:00">22:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="room">Δωμάτιο *</label>
+                            <select id="room" name="room" required>
+                                <option value="">Επιλέξτε δωμάτιο</option>
+                                <option value="egypt">Μυστήριο Αιγύπτου (€25/άτομο)</option>
+                                <option value="zombie">Zombie Apocalypse (€30/άτομο)</option>
+                                <option value="alcatraz">Φυλακή Alcatraz (€22/άτομο)</option>
+                                <option value="space">Διαστημική Αποστολή (€28/άτομο)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="players">Αριθμός Παικτών *</label>
+                            <select id="players" name="players" required>
+                                <option value="">Επιλέξτε αριθμό</option>
+                                <option value="2">2 άτομα</option>
+                                <option value="3">3 άτομα</option>
+                                <option value="4">4 άτομα</option>
+                                <option value="5">5 άτομα</option>
+                                <option value="6">6 άτομα</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Εμπειρία σε Escape Rooms</label>
+                        <select id="experience" name="experience">
+                            <option value="">Επιλέξτε επίπεδο</option>
+                            <option value="beginner">Αρχάριος (0-2 escape rooms)</option>
+                            <option value="intermediate">Μέσος (3-10 escape rooms)</option>
+                            <option value="advanced">Προχωρημένος (10+ escape rooms)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="occasion">Αφορμή (Προαιρετικό)</label>
+                        <select id="occasion" name="occasion">
+                            <option value="">Επιλέξτε αφορμή</option>
+                            <option value="birthday">Γενέθλια</option>
+                            <option value="anniversary">Επέτειος</option>
+                            <option value="corporate">Εταιρικό Event</option>
+                            <option value="friends">Διασκέδαση με φίλους</option>
+                            <option value="date">Ραντεβού</option>
+                            <option value="family">Οικογενειακή έξοδος</option>
+                            <option value="other">Άλλο</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Επιπλέον Σχόλια</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Ειδικές απαιτήσεις, αλλεργίες, προτιμήσεις κτλ..."></textarea>
+                    </div>
+                    
+                    <div class="total-price" id="totalPrice">
+                        Συνολικό Κόστος: €0
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Υποβολή Κράτησης</button>
+                    
+                    <div class="booking-note">
+                        <p><strong>Σημείωση:</strong> Η κράτησή σας θα επιβεβαιωθεί εντός 24 ωρών. Θα λάβετε email επιβεβαίωσης με όλες τις λεπτομέρειες.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>No Way Out</h3>
+                    <p>Η απόλυτη εμπειρία escape room</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Γρήγοροι Σύνδεσμοι</h4>
+                    <ul>
+                        <li><a href="index.html">Αρχική</a></li>
+                        <li><a href="rooms.html">Δωμάτια</a></li>
+                        <li><a href="contact.html">Επικοινωνία</a></li>
+                        <li><a href="booking.html">Κράτηση</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Επικοινωνία</h4>
+                    <p>📍 25ης Μαρτίου 69, Πτολεμαΐδα</p>
+                    <p>📞 6988772489</p>
+                    <p>✉️ info@nowayout.gr</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 No Way Out</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
